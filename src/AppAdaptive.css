@@ -1,0 +1,113 @@
+@media only screen and (max-width: 1000px){
+    .profile_page {
+        grid-template-columns: 1.5fr 1.5fr 2fr;
+    }
+    .auth_start::before {
+        content: '';
+        background-image: none;
+    }
+    .auth_login::before {
+        content: '';
+        background-image: none;
+    }
+}
+@media only screen and (max-width: 960px){
+    .create_game_section {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 830px){
+    .profile_page {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: var(--default-margin-element);
+    }
+}
+@media only screen and (max-width: 800px){
+    .desktop_header_section {
+        display: none;
+    }
+    .mobile_header_section {
+        display: block;
+    }
+    .chat_page {
+        flex-direction: column;
+    }
+    .chat_messages_block {
+        height: 96% !important;
+    }
+    .chat_page .chat_block {
+        max-height: 500px;
+    }
+    .chat_page .chat_block:first-child .chat_messages_block {
+        max-height: 370px;
+    }
+}
+@media only screen and (max-width: 700px){
+    .choose_characters_block {
+        flex-direction: column;
+    }
+    .market_products {
+        display: flex !important;
+        flex-direction: column;
+        gap: var(--default-margin-element);
+    }
+    .divided_section_header {
+        flex-direction: column;
+    }
+    .divided_section_header .right {
+        margin-top: var(--default-small-margin-element);
+        align-items: flex-start;
+        justify-content: start;
+    }
+    .medium_logo {
+        width: 260px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .btn_auth {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 650px){
+    .giveaways_page {
+        flex-direction: column;
+    }
+    .modal_close_icon {
+        top: 20px;
+        right: 10px;
+        width: 35px;
+        height: 30px;
+    }
+}
+@media only screen and (max-width: 550px){
+    .battle_bet_block, .battle_info_block {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 500px){
+    .rating_user div span.name {
+        display: none;
+    }
+    #auth_start h2, #auth_login h2 {
+        font-size: 20px;
+    }
+    .battle_players {
+        flex-direction: column;
+        gap: 30px !important;
+    }
+    .battle_event {
+        min-width: 300px;
+        max-width: 300px;
+        word-break: keep-all;
+    }
+    .btn_auth {
+        padding: 15px 0;
+        width: 100%;
+    }
+    .game_modal {
+        min-width: 330px;
+        max-width: 330px;
+    }
+}
